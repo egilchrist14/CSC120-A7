@@ -12,6 +12,21 @@ public class Building {
         this("<Name Unknown>", "<Address Unknown>", 1);
     }
 
+    public static void House(String[] args) {
+        House comstock = new House("Comstock", "1 Mandelle Road", 3, true, true);
+        System.out.println(comstock);
+    }
+
+    public static void Library(String[] args) {
+        Library greene = new Library("Greene County Public Library", "415 Xenia Ave", 1, false);
+        System.out.println(greene);
+    }
+
+    public static void Cafe(String[] args) {
+        Cafe Emporium = new Cafe("The Emporium", "233 Xenia Ave", 1);
+        System.out.println(Emporium);
+    }
+
     /* Overloaded constructor with address only */
     public Building(String address) {
         this(); // Call default constructor
